@@ -1,0 +1,57 @@
+/* OKX 合约监控与策略：只用 kit.css 的变量。类名统一以 okx- 开头。 */
+.okx-root { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 12px; }
+.okx-sp { flex: 1; }
+.okx-small { font-size: .88em; }
+.okx-risk { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: var(--radius); background: var(--warn-soft); color: var(--warn); font-size: .92em; font-weight: 500; }
+.okx-risk svg { flex: none; }
+.okx-tabs { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.okx-badge { display: inline-flex; align-items: center; gap: 6px; padding: 3px 12px; border-radius: 999px; font-size: .9em; font-weight: 600; background: var(--chip); color: var(--ink); white-space: nowrap; }
+.okx-badge.sim { background: var(--primary-soft); color: var(--primary); }
+.okx-badge.live { background: var(--err-soft); color: var(--err); }
+.okx-demo { padding: 6px 12px; border-radius: var(--radius); background: var(--primary-soft); color: var(--primary); font-size: .9em; font-weight: 500; }
+.okx-toast { padding: 8px 12px; border-radius: var(--radius); background: var(--ok-soft); color: var(--ok); font-weight: 500; }
+.okx-page { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.okx-bar { display: flex; align-items: center; gap: 10px 14px; flex-wrap: wrap; }
+.okx-check { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.okx-alert { display: flex; align-items: flex-start; gap: 8px; padding: 8px 12px; border-radius: var(--radius); background: var(--err-soft); color: var(--err); font-size: .93em; }
+.okx-alert svg { flex: none; margin-top: 2px; }
+.okx-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.okx-stat { padding: 10px 14px; display: grid; gap: 4px; }
+.okx-big { font-size: 1.55em; font-weight: 700; line-height: 1.15; }
+.okx-pos { color: var(--ok); font-weight: 600; }
+.okx-neg { color: var(--err); font-weight: 600; }
+.okx-ok { color: var(--ok); font-weight: 500; }
+.okx-sec { padding: 12px 14px; display: grid; gap: 10px; min-width: 0; }
+.okx-sec h3 { margin: 0; font-size: 1em; font-weight: 700; }
+.okx-none { margin: 0; padding: 4px 0; }
+.okx-empty { display: grid; justify-items: center; gap: 8px; padding: 36px 20px; text-align: center; }
+.okx-empty p { margin: 0; max-width: 460px; }
+.okx-empty-line { margin: 0; padding: 4px 2px; }
+.okx-mode-note { margin: 0; font-size: .93em; }
+.okx-action { display: flex; align-items: baseline; gap: 10px 14px; flex-wrap: wrap; padding: 10px 14px; border-radius: var(--radius-lg); border: 1px solid var(--line); background: var(--surface); border-left: 6px solid var(--line-strong); }
+.okx-action.hint { border-left-color: var(--primary); background: var(--primary-soft); }
+.okx-action.ordered { border-left-color: var(--ok); background: var(--ok-soft); }
+.okx-action.blocked { border-left-color: var(--warn); background: var(--warn-soft); }
+.okx-action.error { border-left-color: var(--err); background: var(--err-soft); }
+.okx-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.okx-list { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.okx-replay { display: grid; gap: 4px; padding: 8px 12px; border-radius: var(--radius); background: var(--chip); }
+.okx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px 16px; align-items: start; }
+.okx-inline { display: flex; align-items: center; gap: 8px; }
+.okx-saved { margin: 0; }
+.okx-saved code { padding: 1px 6px; border-radius: 4px; background: var(--chip); }
+.okx-modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+.okx-mode { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius-lg); cursor: pointer; background: var(--surface); }
+.okx-mode.on { border-color: var(--primary); background: var(--primary-soft); }
+.okx-mode input { margin-top: 3px; }
+.okx-mode span { display: grid; gap: 2px; }
+.okx-mode small { color: var(--muted); font-size: .86em; }
+.okx-live { display: grid; gap: 10px; padding: 12px 14px; border-radius: var(--radius-lg); border: 1px solid var(--err); background: var(--err-soft); }
+.okx-live p { margin: 0; }
+.okx-url { max-width: 520px; }
+.okx-logs { padding: 6px 12px; display: grid; gap: 0; max-height: 60vh; overflow: auto; }
+.okx-log { display: grid; grid-template-columns: 70px 1fr; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: .93em; }
+.okx-log:last-child { border-bottom: 0; }
+.okx-log.err span:last-child { color: var(--err); }
+.okx-log.warn span:last-child { color: var(--warn); font-weight: 500; }
+.okx-log.fill span:last-child { color: var(--primary); }

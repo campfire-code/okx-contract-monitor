@@ -1,0 +1,13 @@
+{
+  "id": "a10",
+  "slug": "okx-contract-monitor",
+  "name": "OKX 合约监控与策略",
+  "version": "0.1.0",
+  "repo": "campfire-code/okx-contract-monitor",
+  "license": "MIT",
+  "ui": {
+    "layout": "b",
+    "palette": "blue"
+  },
+  "upstream": null
+}
